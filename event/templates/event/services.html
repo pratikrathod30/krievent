@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Services - Kri Events{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+<script src="{% static 'js/services.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+    <div class="banner">
+        <!-- <img src="service.png" alt="Banner Image"> -->
+        <h1>Our Services</h1>
+    </div>
+
+    <div class="event-intro">
+        <p>Every event tells a story, and we ensure yours is unforgettable. From stunning décor to seamless execution,
+            our team crafts experiences that leave a lasting impression.</p>
+    </div>
+
+    <div class="details py-5">
+        <div class="row g-4">
+            <!-- Wedding Service -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item text-center p-4 shadow rounded">
+                    <i class="bi bi-heart fs-1 text-light"></i>
+                    <h3 class="mt-3">Weddings</h3>
+                    <p>We make your dream wedding come true with detailed planning, flawless execution, and beautiful
+                        décor.</p>
+                </div>
+            </div>
+
+            <!-- Corporate Events -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item text-center p-4 shadow rounded">
+                    <i class="bi bi-briefcase fs-1 text-light"></i>
+                    <h3 class="mt-3">Corporate Events</h3>
+                    <p>We organize corporate events that foster engagement, networking, and growth for your business.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Processions -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item text-center p-4 shadow rounded">
+                    <i class="bi bi-person-lines-fill fs-1 text-light"></i>
+                    <h3 class="mt-3">Processions</h3>
+                    <p>We plan and manage grand processions with seamless logistics and elegant arrangements.</p>
+                </div>
+            </div>
+
+            <!-- Promotional Activities -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item text-center p-4 shadow rounded">
+                    <i class="bi bi-megaphone fs-1 text-light"></i>
+                    <h3 class="mt-3">Promotional Activities</h3>
+                    <p>Our promotional events are designed to create lasting impressions and enhance brand visibility.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Venue Suggestions -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item text-center p-4 shadow rounded">
+                    <i class="bi bi-house-door-fill fs-1 text-light"></i>
+                    <h3 class="mt-3">Venue Suggestions</h3>
+                    <p>We offer a curated list of venues that perfectly match your event requirements and vision.</p>
+                </div>
+            </div>
+
+            <!-- Exhibitions & Expos -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item text-center p-4 shadow rounded">
+                    <i class="bi bi-image fs-1 text-light"></i>
+                    <h3 class="mt-3">Exhibitions & Expos</h3>
+                    <p>We organize dynamic exhibitions and expos that capture attention and create impactful
+                        experiences.</p>
+                </div>
+            </div>
+
+            <!-- Entertainment Solutions -->
+            <div class="col-md-6 col-lg-4 mx-auto">
+                <div class="service-item text-center p-4 shadow rounded">
+                    <i class="bi bi-music-note-list fs-1 text-light"></i>
+                    <h3 class="mt-3">Entertainment Solutions</h3>
+                    <p>We provide top-notch entertainment services that bring energy and excitement to any event.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleCaptions" class="carousel" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Wedding -->
+            <div class="carousel-item active">
+                <img src="{% static 'images/wedding.jpg' %}" class="d-block w-100" alt="Wedding">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Wedding</h5>
+                    <p>Celebrate your special day with elegant décor, seamless planning, and unforgettable moments.</p>
+                </div>
+            </div>
+    
+            <!-- Corporate Events -->
+            <div class="carousel-item">
+                <img src="{% static 'images/Corporateevent.jpg' %}" class="d-block w-100" alt="Corporate Event">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Corporate Events</h5>
+                    <p>Host impactful conferences, product launches, and team-building activities with expert execution.</p>
+                </div>
+            </div>
+    
+            <!-- Processions -->
+            <div class="carousel-item">
+                <img src="{% static 'images/procession.jpg' %}" class="d-block w-100" alt="Procession">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Procession</h5>
+                    <p>Orchestrate grand processions with seamless logistics and culturally rich experiences.</p>
+                </div>
+            </div>
+    
+            <!-- Promotional Activities -->
+            <div class="carousel-item">
+                <img src="{% static 'images/Promotional.jpeg' %}" class="d-block w-100" alt="Promotional Activities">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Promotional Activities</h5>
+                    <p>Boost your brand visibility with engaging and strategically planned promotional campaigns.</p>
+                </div>
+            </div>
+    
+            <!-- Venue Suggestions -->
+            <div class="carousel-item">
+                <img src="{% static 'images/venue.jpg' %}" class="d-block w-100" alt="Venue Suggestions">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Venue Suggestions</h5>
+                    <p>Find the perfect venue that aligns with your vision, style, and event requirements.</p>
+                </div>
+            </div>
+    
+            <!-- Exhibitions & Expos -->
+            <div class="carousel-item">
+                <img src="{% static 'images/exhibitions.jpg' %}" class="d-block w-100" alt="Exhibitions and Expos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Exhibitions & Expos</h5>
+                    <p>Showcase your brand in dynamic expos and exhibitions that leave a lasting impression.</p>
+                </div>
+            </div>
+    
+            <!-- Entertainment Solutions -->
+            <div class="carousel-item">
+                <img src="{% static 'images/entertainment.jpg' %}" class="d-block w-100" alt="Entertainment Solutions">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Entertainment Solutions</h5>
+                    <p>Elevate your event with top-tier artists, performances, and engaging entertainment experiences.</p>
+                </div>
+            </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+ {% endblock content%}

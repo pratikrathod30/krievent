@@ -1,0 +1,61 @@
+
+
+        .card {
+            margin-top: 10px;
+            font-family: abril-fatface;
+        }
+    
+        
+      
+        
+        .card-img {
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card-img.loaded {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .card h1 {
+            color: #5a4231;
+        }
+
+        .card p {
+            color: #5a4231;
+        }
+
+        .carousel {
+            margin-top: 10px;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+            transition: transform 1s ease-in-out;
+        }
+
+        .carousel-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .carousel-caption {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+   
+        /* Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-in-out;
+        }
+    

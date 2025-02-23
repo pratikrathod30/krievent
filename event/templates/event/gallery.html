@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Gallery - Kri Events{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Explore Our Memories</h2>
+        <p class="text-center text-muted">Take a look at our event highlights, featuring stunning images and engaging videos.</p>
+        <div class="gallery-container mx-auto">
+
+            <!-- Image Gallery -->
+            <div class="gallery-images">
+                <img src="{% static 'images/photo1.jpeg' %}" alt="Event Image 1">
+                <img src="{% static 'images/photo2.jpeg' %}" alt="Event Image 2">
+                <img src="{% static 'images/photo3.jpeg' %}" alt="Event Image 3">
+                <img src="{% static 'images/photo4.jpeg' %}" alt="Event Image 4">
+                <img src="{% static 'images/photo5.jpeg' %}" alt="Event Image 5">
+                <img src="{% static 'images/photo6.jpeg' %}" alt="Event Image 6">
+                <img src="{% static 'images/photo7.jpeg' %}" alt="Event Image 7">
+                <img src="{% static 'images/photo8.jpeg' %}" alt="Event Image 8">
+                <img src="{% static 'images/photo9.jpeg' %}" alt="Event Image 9">
+                <img class="last" src="{% static 'images/photo10.jpeg' %}" alt="Event Image 10">
+            </div>
+
+            <!-- Video Gallery -->
+            <div class="gallery-videos">
+                <div class="video-grid">
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video1.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video2.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video3.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video4.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video5.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video6.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video7.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video8.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video9.mp4' %}" type="video/mp4">
+                    </video>
+                    <video muted autoplay loop>
+                        <source src="{% static 'images/video10.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

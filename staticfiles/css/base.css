@@ -1,0 +1,78 @@
+.navbar {
+    background-color: #3b2a1e !important;
+    /* Slight transparency */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* Navbar fix kar diya */
+    top: 0;
+    /* Page ke upar fix */
+    width: 100%;
+    z-index: 1000;
+    /* Taaki content ke peeche na chhup jaye */
+    padding: 10px 0;
+    /* Extra padding for better look */
+}
+
+body {
+    padding-top: 60px;
+    /* Navbar ke neeche ka content properly dikhe */
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: mintcream;
+    padding: 10px 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0px 3px 10px black;
+}
+
+.nav-link:hover {
+    background-color: #d6c4b579;
+    color: mintcream !important;
+    transform: scale(1.1);
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    /* White border */
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+    /* Converts it to white */
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    /* Logo aur text ek line me rahe */
+    font-size: 22px;
+    font-weight: bold;
+    color: mintcream !important;
+    text-shadow: 0px 3px 10px black;
+    margin-left: 15px;
+    /* Brand name thoda right shift */
+}
+
+.navbar-brand img {
+    width: 30px;
+    /* Logo size increase */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 30px;
+    /* Navbar ki height na bade */
+    margin-right: 8px;
+    /* Logo aur text ke beech thoda gap */
+    border: 1px solid white;
+    /* Adding a white border */
+    border-radius: 50%;
+}

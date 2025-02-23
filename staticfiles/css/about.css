@@ -1,0 +1,217 @@
+
+
+
+.about-section {
+    position: relative;
+    overflow: hidden;
+    /* Ensures content beyond section's boundaries is hidden */
+    background-color: #d6c4b579;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    /* Reduces bottom padding */
+    height: 500px;
+    /* Fixed height to crop the section (adjust as necessary) */
+}
+
+.image-wrapper {
+    display: inline-block;
+    position: relative;
+    animation: floatAnimation 3s infinite ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.owner-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 6px solid #5a4231;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    border-radius: 50%;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #5a4231;
+    line-height: 1.7;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    /* Slight margin at the bottom */
+}
+
+h2 {
+    color: #5a4231;
+    /* Dark color for headings */
+}
+
+.owner-img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.highlight {
+    color: #d9534f;
+    font-weight: bold;
+    background: linear-gradient(to right, #d9534f, #f39c12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.5s forwards ease-out;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.5s forwards ease-out;
+}
+
+.delay {
+    animation-delay: 0.5s;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.apple-style {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.apple-style .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.apple-style .headline {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+.apple-style .tagline {
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.apple-style .description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Container to display cards in a horizontal row */
+.flip-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    background: linear-gradient(135deg, #fff, #e00);
+}
+
+/* Flip card styling */
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    /* Adjust width as needed */
+    height: 300px;
+    /* Adjust height as needed */
+    perspective: 1000px;
+    /* Creates 3D effect */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.534);
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+/* Front face with chocolaty text */
+.flip-card-front {
+    background-color: maroon;
+    color: floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+}
+
+/* Back face with image */
+.flip-card-back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.flip-card-back img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.flip-card:hover .flip-card-back img {
+    transform: scale(1.05);
+}
+
+
+

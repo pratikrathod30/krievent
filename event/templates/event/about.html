@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About - Kri Events{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% comment %} <script src="{% static 'js/services.js' %}" defer></script> {% endcomment %}
+{% endblock %}
+
+{% block content %}
+    <!-- About Section -->
+    <section class="about-section container py-5 mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <div class="image-wrapper">
+                    <img src="{% static 'images/owner.jpeg' %}" class="img-fluid rounded-circle shadow-lg owner-img"
+                        alt="Kritika Rathod">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="fw-bold text-primary fade-in">About <span class="highlight">Kri Events</span></h2>
+                <p class="about-text slide-up">
+                    <strong>Kri Events</strong>, founded by <strong>Kritika Rathod</strong>, is a creative and
+                    professional event management company dedicated to crafting
+                    <span class="highlight">memorable experiences</span>. We specialize in
+                    <strong>weddings, corporate events, exhibitions, promotional activities, and entertainment
+                        solutions</strong>,
+                    handling every element from start to finish.
+                </p>
+                <p class="about-text slide-up delay">
+                    Our personalized approach ensures <strong>seamless execution</strong>, offering end-to-end services
+                    that stand out
+                    with a unique creative touch. At <strong>Kri Events</strong>, your vision becomes our mission,
+                    creating
+                    <span class="highlight">unforgettable moments</span> tailored just for you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="apple-style">
+        <div class="container">
+            <h1 class="headline">Next-Level Event Experiences</h1>
+            <p class="tagline">Go to great lengths to make every moment unforgettable</p>
+            <p class="description">
+                The versatile expertise of <strong>Kri Events</strong> ensures every occasion is flawlessly designed,
+                whether it’s a grand wedding, a high-profile corporate event, or an immersive promotional campaign.
+                From breathtaking décor to seamless logistics, we transform ideas into extraordinary realities.
+            </p>
+            <p class="description">
+                With our all-in-one event solutions, we create stunning, tailor-made experiences—elevating every detail
+                with precision and creativity. Whether it’s a luxurious venue transformation, an electrifying
+                entertainment
+                setup, or a flawlessly executed procession, we make it happen effortlessly.
+            </p>
+            <p class="description">
+                And with our innovative planning approach, we ensure your event isn’t just successful—it’s truly iconic.
+            </p>
+        </div>
+    </section>
+
+
+    <div class="flip-card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="front-text">Treasured Memories.</div>
+                </div>
+                <div class="flip-card-back">
+                    <img src={% static 'images/groupphoto3.jpeg' %} alt="Happy Event 1">
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="front-text">Cherished Celebrations.</div>
+                </div>
+                <div class="flip-card-back">
+                    <img src={% static 'images/groupphoto2.jpeg' %} alt="Happy Event 2">
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="front-text">Joyful Gatherings.</div>
+                </div>
+                <div class="flip-card-back">
+                    <img src={% static 'images/groupphoto.jpeg' %} alt="Happy Event 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content%}

@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}inventory - Kri Events{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/inven.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="details">
+        <!-- Sidebar with Inventory Categories -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#venue-essentials">Venue Essentials</a></li>
+                <li><a href="#seating-furniture">Seating & Furniture</a></li>
+                <li><a href="#sound-lighting">Sound & Lighting Equipment</a></li>
+                <li><a href="#display-visuals">Display & Visuals</a></li>
+                <li><a href="#decorations-theming">Decorations & Theming</a></li>
+                <li><a href="#power-utilities">Power & Utilities</a></li>
+                <li><a href="#safety-security">Safety & Security</a></li>
+                <li><a href="#crowd-control">Crowd Control & Logistics</a></li>
+                <li><a href="#entertainment-equipment">Entertainment Equipment</a></li>
+                <li><a href="#catering-hospitality">Catering & Hospitality</a></li>
+                <li><a href="#miscellaneous">Miscellaneous Essentials</a></li>
+            </ul>
+        </aside> 
+
+        <!-- Inventory Details -->
+        <main class="content">
+            <section id="venue-essentials">
+                <h2>Venue Essentials</h2>
+                <ul>
+                    <li>Barricading</li>
+                    <li>Entry/Exit Gates</li>
+                    <li>Stage Setup (Platform, Backdrops, Risers)</li>
+                    <li>Podiums</li>
+                    <li>Flooring (Carpet, Wooden, or Elevated Platforms)</li>
+                </ul>
+            </section>
+            <section id="seating-furniture">
+                <h2>Seating & Furniture</h2>
+                <ul>
+                    <li>Chairs (Banquet, VIP, Lounge)</li>
+                    <li>Tables (Round, Cocktail, Conference)</li>
+                    <li>Sofas and Ottomans</li>
+                    <li>VIP Lounges</li>
+                </ul>
+            </section>
+            <section id="sound-lighting">
+                <h2>Sound & Lighting Equipment</h2>
+                <ul>
+                    <li>Speakers (Line Arrays, Subwoofers)</li>
+                    <li>Microphones (Wired, Wireless, Lapel)</li>
+                    <li>Sound Mixers</li>
+                    <li>DJ Booth Setup</li>
+                    <li>Stage and Ambient Lighting (Spotlights, LED Walls, Moving Heads)</li>
+                </ul>
+            </section>
+            <section id="display-visuals">
+                <h2>Display & Visuals</h2>
+                <ul>
+                    <li>LED Screens (P2, P4, Outdoor Displays)</li>
+                    <li>Projectors and Screens</li>
+                    <li>Digital Signage</li>
+                    <li>Backdrop and Branding Panels</li>
+                </ul>
+            </section>
+            <section id="decorations-theming">
+                <h2>Decorations & Theming</h2>
+                <ul>
+                    <li>Floral Arrangements</li>
+                    <li>Decorative Drapes</li>
+                    <li>Thematic Props</li>
+                    <li>Centerpieces</li>
+                </ul>
+            </section>
+            <section id="power-utilities">
+                <h2>Power & Utilities</h2>
+                <ul>
+                    <li>Generators</li>
+                    <li>UPS Backup Systems</li>
+                    <li>Power Cables and Distribution Boards</li>
+                </ul>
+            </section>
+            <section id="safety-security">
+                <h2>Safety & Security</h2>
+                <ul>
+                    <li>Fire Extinguishers</li>
+                    <li>CCTV Surveillance</li>
+                    <li>Metal Detectors</li>
+                    <li>Security Staff</li>
+                </ul>
+            </section>
+            <section id="crowd-control">
+                <h2>Crowd Control & Logistics</h2>
+                <ul>
+                    <li>Barricades (Iron, Rope, or Plastic)</li>
+                    <li>Queue Managers</li>
+                    <li>Signage for Navigation</li>
+                </ul>
+            </section>
+            <section id="entertainment-equipment">
+                <h2>Entertainment Equipment</h2>
+                <ul>
+                    <li>Dance Floor Setup</li>
+                    <li>Performer Props</li>
+                    <li>Special Effects (Smoke Machines, Confetti Cannons)</li>
+                </ul>
+            </section>
+            <section id="catering-hospitality">
+                <h2>Catering & Hospitality</h2>
+                <ul>
+                    <li>Buffet Tables and Covers</li>
+                    <li>Crockery and Cutlery</li>
+                    <li>Food Counters</li>
+                    <li>Serving Staff</li>
+                </ul>
+            </section>
+            <section id="miscellaneous">
+                <h2>Miscellaneous Essentials</h2>
+                <ul>
+                    <li>Green Rooms and Changing Areas</li>
+                    <li>Washroom Facilities</li>
+                    <li>First Aid Kits</li>
+                    <li>Event Management Software (Registration Systems, Ticketing Apps)</li>
+                </ul>
+            </section> 
+            <!-- Repeat similar sections for other categories -->
+        </main>
+    </div>
+
+   {% endblock content%}
